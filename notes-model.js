@@ -5,3 +5,7 @@
 
      exports.Notes = Notes;
    }) (this);
+
+Notes.prototype.read = function() {
+  return this.text
+}

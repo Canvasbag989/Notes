@@ -12,3 +12,18 @@
 
    testNoteInstantiatesWithText();
  }) (this);
+
+(function(exports){
+  function testsNotesReadMethod() {
+    var note = new Notes("Can you read me?");
+
+    if (note.read() !== "Can you read me?") {
+      throw new Error("I can not read you!");
+    }
+    else {
+      console.log('Read method is working')
+    }
+  };
+
+  testsNotesReadMethod();
+}) (this);
