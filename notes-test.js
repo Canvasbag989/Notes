@@ -13,6 +13,7 @@
    testNoteInstantiatesWithText();
  }) (this);
 
+
 (function(exports){
   function testsNotesReadMethod() {
     var note = new Notes("Can you read me?");
@@ -26,4 +27,3 @@
   };
 
   testsNotesReadMethod();
-}) (this);
