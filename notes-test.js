@@ -46,3 +46,18 @@
   };
   testNoteListInstantiatesWithArray();
 }) (this);
+
+(function(exports){
+  function testArrayReturnsNotes() {
+    var note1 = new Notes("Shopping list")
+    var note2 = new Notes("Todo list")
+    var noteArray = new NotesList([note1, note2])
+    if (console.log(noteArray.all()) !== note1, note2 ) {
+    throw new Error("No notes stored") 
+    }
+    else {
+      console.log("Notes are stored")
+    }
+  };
+  testArrayReturnsNotes();
+}) (this);
